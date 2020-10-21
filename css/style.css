@@ -7,8 +7,16 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
     background-color: #E5E5E5;
-
 }
+
+
+:root{
+    --main-text-color: #212121;
+    --second-text-color: #FFFFFF;
+    --accent-cl: #2196F3;
+}
+
+
 .navigate li,
 .contacts li,
 .buttons li,
@@ -17,6 +25,7 @@ body {
 .principles li{
     list-style-type: none;
 }
+
 
 .portfolio li{
     list-style-type: none;
@@ -45,13 +54,13 @@ body {
 }
 
 .makeorder{
-    color: rgba(255,255,255,1);
+    color: var(--second-text-color);
     height: 30px;
     width: 136px;
     left: 732px;
     top: 440px;
     border-radius: nullpx;
-    background: rgba(33, 150, 243, 1);
+    background: var(--accent-cl);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -60,6 +69,8 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
 }
+
+
 
 .team{
     background: rgba(245, 244, 250, 1);
@@ -77,7 +88,7 @@ body {
 }
 
 .web{
-    color: rgba(33, 150, 243, 1);
+    color: var(--accent-cl);
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-style: normal;
@@ -101,7 +112,7 @@ body {
 
 
  .studiof{
-    color: rgba(255,255,255,1);
+    color: var(--second-text-color);
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-style: normal;
@@ -126,46 +137,42 @@ body {
 .hero{
     font-family: "Roboto", sans-serif;
     background: rgba(47, 48, 58, 1);
-    color: rgba(255,255,255,1)
+    color: var(--second-text-color);
 }
 
 
 .port-main{
     font-family: "Roboto", sans-serif;
-    background: rgba(255, 255, 255, 1);
+    background: var(--second-text-color);
 }
 
 
-footer{
+.footer{
     font-family: "Roboto", sans-serif;
     background: rgba(47, 48, 58, 1);
 }
 
 
-footer a{
-    color: rgba(255,255,255,1)
+.footer a,
+.footer address{
+    color: var(--second-text-color)
 }
 
 
-address{
-    color: rgba(255,255,255,1)
-}
-
-
-a {
+.a-link {
     color: rgba(33,33,33,1);
     text-decoration: none;    
 }
 
-a:hover,
-a:focus,
-address:hover,
-address:focus{
-  color: rgba(33,150,243,1);
+.a-link:hover, 
+.a-link:focus,
+.way:hover,
+.way:focus{
+  color: var(--accent-cl);
 }
 
-nav {
-    background: rgba(255, 255, 255, 1);
+.nav-list {
+    background: var(--second-text-color);
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
