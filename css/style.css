@@ -31,18 +31,41 @@ img{
     height: auto;
 }
 
-.navi {
-    width: 1600px;
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-right: auto;
+}
+
+.header{
+    
     height: 80px;
-    display: flex;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    background: var(--second-text-color);
+    width: 1600px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-container{
+    display: inline-flex;
+    align-items: center;  
+   
+}
+
+.header .logo{
+    margin-right: 93px;
+    
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .logo{
-    text-decoration: none;
+    
     color: var(--main-text-color);
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -51,23 +74,40 @@ img{
     letter-spacing: 0.03em;
     line-height: 31px;
     margin-left: 215px;
-    margin-top: 24px;    
+    
+    
 }
 
 .web{
     color: var(--accent-cl);
 }
 
-.navigate{
-    display: flex;
-    list-style-type: none;
-    margin-top: 32px;
-    margin-left: 93px;
+.link{
+    
+    text-decoration: none;
     
 }
-.navigate-link{
-    text-decoration: none;
-    padding-right: 50px;
+
+.navi,
+.menu{
+
+    display: inline-flex; 
+   
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+.menu-item:nth-child(3){
+    margin-right: 331px;
+}
+
+.menu-item{
+   
+    
+ }
+
+.menu-link{
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -75,32 +115,30 @@ img{
     line-height: 16px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: var(--main-text-color);
 
 }
 
-.navigate-link:hover,
-.navigate-link:focus{
+.menu-link:hover,
+.menu-link:focus{
     color: var(--accent-cl);
 }
 
-.paddi{
-    padding-right: 331px;
+.hero{
+    background-color: #2F303A;
+    width: 1600px;
+    height: 600px;  
 }
 
-
-.hero{
-    width: 1600px;
-    height: 600px;
-    background-color:#2F303A;
+.hero-content{
+    max-width: 698px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+     
 }
 
 .herohead{
-    height: 120px;
-    width: 696px;
-    left: 452px;
-    top: 280px;
-    border-radius: nullpx;
+    text-transform: uppercase;
     font-family: Roboto;
     font-size: 44px;
     font-style: normal;
@@ -109,76 +147,133 @@ img{
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--second-text-color);
-    padding-top: 200px;
-    margin-left: 452px;  
 }
 
 .makeorder{
+
+    text-decoration: none;
+    text-align: center;
+    color: var(--second-text-color);
+    background-color: var(--accent-cl);
     height: 50px;
     width: 200px;
-    left: 700px;
-    top: 430px;
-    border-radius: 4px;
+    
+    border-radius: nullpx;
 
-    position: absolute;
-
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-decoration: none;
-    color: var(--second-text-color);
-    padding-top: 10px;
-
+    margin-top: 350px;
+    margin-bottom: 200px;
+    padding: 10px;
+    margin-left: 250px;
 }
+
 .makeorder:hover,
 .makeorder:focus{
     background-color: var(--second-text-color);
     color: var(--accent-cl);
 }
 
-.principles{
-
-    display: block;
+.h2-head{
     width: 1600px;
+    text-align: center;
     
-    display: flex;
+}
+
+.head-about{
+    display: none;
+}
+
+.principles-list{
+
    
-    left: 0px;
-    top: 0px;
-    background: var(--second-text-color);
+    display: block;
+    width: calc((100% - 30px)/4);
 }
 
 .whatwedo{
-    box-sizing: border-box;
-    
-    display: block;
     width: 1600px;
-    
     display: flex;
-   
-    left: 0px;
-    top: 0px;
-    background: var(--second-text-color);
+    margin-top: 50px;
+
+
+  
+    margin-left: 215px;
+    margin-right: 215px;
+
+}
+.whatwedo-item {
+    padding-right: 30px;
 }
 
 .team{
-
-    box-sizing: border-box;
-    
-    display: block;
     width: 1600px;
+   
+    margin-top: 188px;
+
     
+}
+.team-item{
+    margin-top: 280px;
+    flex-basis: calc(100%/4 - 30px);
     display: flex;
    
-    left: 0px;
-    top: 0px;
-    background: var(--second-text-color);
+
 }
+.together-list{
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 1600px;
+    height: 252px;
+    background-color: #2F303A;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.studiof{
+    color: var(--second-text-color);
+}
+
+.footer-container{
+    
+    margin-left: 215px;
+    padding-top: 60px;
+    margin-bottom: 8px;
+}
+
+.way{
+    color: var(--second-text-color);
+    font-style: normal;
+
+    margin-top: 20px;
+   
+}
+
+.buttons{
+    width: 1600px;
+    color:var(--main-text-color);
+    background-color: var(--second-text-color);
+}
+
+.buttons-list{
+    align-items: center;
+    text-decoration: none;
+    width: auto;
+    height: 38;
+}
+
