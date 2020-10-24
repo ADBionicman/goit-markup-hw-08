@@ -25,261 +25,160 @@ body {
     background-color: #E5E5E5;
 }
 
-.container {
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.navi {
     width: 1600px;
     height: 80px;
-    background-color: var(--second-text-color);
-    outline: 2px solid black;
-    
-}
-
-.log,
-.navigate,
-.contacts{
-    display: inline-block;
-}
-.navigate li,
-.contacts li{
-    display: inline-block;   
-}
-.hero{
-
-    font-family: "Roboto", sans-serif;
-    color: var(--second-text-color);
-    width: 1600px;
-    height: 600px;
-    background-color:  #2F303A;;
-    outline: 2px solid black;
-}
-
-.herohead{
+    display: flex;
     position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    /* or 136% */
-    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    
-    color: var(--second-text-color);
-
+    left: 0px;
+    top: 0px;
+    background: var(--second-text-color);
 }
-.hero .makeorder{
-   position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 732px;
-    top: 440px;
-
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: ;
-/* identical to box height, or 187% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    background-color: var(--accent-cl);
-    text-decoration: none;
-
-    color: var(--second-text-color);
-}
-
-.about{
-
-    width: 1600px;
-    height: 769px;
-    outline: 2px solid black;
-    background-color: var(--second-text-color);
-
-
-}
-
-.principles { 
-    display: flex;   
-   
-}
-
-.whatwedo{
-    display: flex;
-    
-}
-
-.team{
-    width: 1600px;
-    height: 648px;
-    background-color: var(--second-text-color);
-    outline: 2px solid black;       
-}
-
-.together{
-    margin-left: 215px;
-    display: flex;
-    padding-left: 30px;
-}
-
-.footer{
-    
-    width: 1600px;
-    height: 252px;
-    background-color: var(--second-text-color);
-    outline: 2px solid black;
-}
-
-.address{
-    padding-left: 215px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-}
-
-.buttons a{
-    
-    color: #212121;
-    background-color: var(--second-text-color);
-    border: none;
-    
-    text-decoration: none;
-}
-
-.container li,
-.buttons li,
-.team li,
-.about li,
-.portfolio li{
-    list-style-type: none;    
-}
-
-
-.portfolio li{
-   
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    text-align: left;
-}
-
-.variant{
-    font-weight: 400;
-}
-
-.prof {
-    font-weight: 400;
-
-}
-
 
 .logo{
-    color: rgba(33,33,33,1);
-    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-family: Raleway, sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 31px;
     letter-spacing: 0.03em;
-    text-align: left;
-    text-decoration: none;
-
+    line-height: 31px;
+    margin-left: 215px;
+    margin-top: 24px;    
 }
+
 .web{
     color: var(--accent-cl);
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
 }
 
-.studiof{
-    color: var(--second-text-color);
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
- }
-
- .buttons{
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    text-align: center;
+.navigate{
+    display: flex;
+    list-style-type: none;
+    margin-top: 32px;
+    margin-left: 93px;
     
-    
- }
-
-
-
-.port-main{
-    font-family: "Roboto", sans-serif;
-    background: var(--second-text-color);
 }
-
-
-.footer{
-    font-family: "Roboto", sans-serif;
-    background: rgba(47, 48, 58, 1);
-}
-
-
-.footer a,
-.footer address{
-    color: var(--second-text-color)
-}
-
-
-.a-link {
-    color: rgba(33,33,33,1);
-    text-decoration: none;  
-
-}
-
-.way{
-    font-style: normal;
-}
-
-.address .a-link{
-   
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.a-link:hover, 
-.a-link:focus,
-.way:hover,
-.way:focus{
-  color: var(--accent-cl);
-}
-
-.nav-list {
-    background: var(--second-text-color);
-    font-family: "Roboto", sans-serif;
+.navigate-link{
+    text-decoration: none;
+    padding-right: 50px;
+    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--main-text-color);
+
 }
 
+.navigate-link:hover,
+.navigate-link:focus{
+    color: var(--accent-cl);
+}
+
+.paddi{
+    padding-right: 331px;
+}
+
+
+.hero{
+    width: 1600px;
+    height: 600px;
+    background-color:#2F303A;
+}
+
+.herohead{
+    height: 120px;
+    width: 696px;
+    left: 452px;
+    top: 280px;
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--second-text-color);
+    padding-top: 200px;
+    margin-left: 452px;  
+}
+
+.makeorder{
+    height: 50px;
+    width: 200px;
+    left: 700px;
+    top: 430px;
+    border-radius: 4px;
+
+    position: absolute;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--second-text-color);
+    padding-top: 10px;
+
+}
+.makeorder:hover,
+.makeorder:focus{
+    background-color: var(--second-text-color);
+    color: var(--accent-cl);
+}
+
+.principles{
+
+    display: block;
+    width: 1600px;
+    
+    display: flex;
+   
+    left: 0px;
+    top: 0px;
+    background: var(--second-text-color);
+}
+
+.whatwedo{
+    box-sizing: border-box;
+    
+    display: block;
+    width: 1600px;
+    
+    display: flex;
+   
+    left: 0px;
+    top: 0px;
+    background: var(--second-text-color);
+}
+
+.team{
+
+    box-sizing: border-box;
+    
+    display: block;
+    width: 1600px;
+    
+    display: flex;
+   
+    left: 0px;
+    top: 0px;
+    background: var(--second-text-color);
+}
