@@ -7,6 +7,10 @@ html{
 *::after{
     box-sizing: inherit;
 }
+* {
+    margin: 0;
+    padding: 0;
+    }
 
 :root{
     --main-text-color: #212121;
@@ -54,8 +58,7 @@ img{
     height: 80px;
 
     background-color: #FFFFFF;
-    padding-top: 32px;
-    padding-bottom: 32px;
+   padding-top: 24px;
 }
 
 .header-container{
@@ -142,17 +145,20 @@ img{
 }
 
 .hero-content{
-    max-width: 698px;
-    margin-left: auto;
    
-    padding-top: 200px;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 280px;
      
+   
 }
 
 .herohead{
+  
+    border: 1px solid white;
+
+
+    margin-left: 227px;
+    
+    width: 698px;
+    height: 120px;
     text-transform: uppercase;
     font-family: Roboto;
     font-size: 44px;
@@ -162,12 +168,13 @@ img{
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--second-text-color);
-    align-items: center;
-    text-align: center;
+  
+    
 }
 
 .makeorder{
 
+    border: 1px solid white;
     text-decoration: none;
     text-align: center;
     color: var(--second-text-color);
@@ -176,11 +183,8 @@ img{
     width: 200px;
     align-items: center;
     border-radius: nullpx;
-
-    margin-top: 350px;
-    margin-bottom: 200px;
     padding: 10px;
-    margin-left: 250px;
+    margin-left: 700px;
 }
 
 .makeorder:hover,
@@ -192,7 +196,6 @@ img{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 
@@ -204,6 +207,8 @@ img{
     padding-bottom: 94px;
     align-items: center;   
     background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -211,19 +216,42 @@ img{
 
     text-align: center;
     align-items: center;
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
     
 }
 
 .head-about{
     display: none;
 }
+.principles.list{
+    margin: auto;
+    width: 1200px;
+}
 
+.principles-item{
+    flex-basis: calc(100%/4); 
+}
+
+.principles-item:last-child{
+    padding-right: 0px;
+}
 
 
 .principles{
+    border: 1px solid white;
     display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
     justify-content: space-between;
 }
@@ -242,6 +270,7 @@ img{
 }
 
 .principles-p{
+    margin-top: 10px;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -255,22 +284,18 @@ img{
 
 
 
-.principles-item{
-    flex-basis: calc(100%/4); 
-}
 
-.principles-item:not(:last-child){
-    padding-right: 30px;
-}
 
 .whatwedo{
+    padding-left: 15px;
+    padding-right: 15px;
 
     padding-top: 94px;
     padding-bottom: 94px;
     justify-content: space-between; 
     display: flex;
     align-items: center;
-    
+    border: 1px solid wheat; 
    
 
 }
@@ -284,12 +309,13 @@ img{
     padding-right: 0px;
 }
 
+
 .team{
 
     width: 1600px;
     height: 648px;
     
-    background-color:  rgba(245, 244, 250, 1);   
+    background-color: #F5F4FA;   
     padding-top: 94px;
     padding-bottom: 94px;
     justify-content: space-evenly;
@@ -297,8 +323,10 @@ img{
   
 }
 .team-item{
+
+    border: 1px solid black;
    
-    flex-basis: calc(100%/4);
+    flex-basis: calc(100%/4 - 30px);
     padding-right: 30px;
     
 }
@@ -319,7 +347,7 @@ img{
 
 .portfolio{
     width: 1600px;
-    height: 1548px;
+    height: 1380px;
     background-color: #FFFFFF;
 }
 
@@ -329,36 +357,6 @@ img{
     border: #EEEEEE solid 1px;   
 }
 
-.gallery-item{
-    align-items: center;
-    flex-basis: calc(100%/3);
-}
-
-.gallery-item h3{
-    font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 0.06em;
-text-align: left;
-padding-left: 24px;
-color: rgba(33, 33, 33, 1);
-
-}
-
-.gallery-item h4{
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: rgba(117, 117, 117, 1);
-    padding-left: 24px;
-
-}
  
 
 
@@ -419,10 +417,12 @@ color: rgba(33, 33, 33, 1);
 }
 
 .button{
-   
     text-decoration: none;
     list-style: none;
-    background-color: #E5E5E5;    
+    background-color: FFFFFF;
+    padding-top: 94px;  
+    margin-bottom: 50px;  
+    margin-left: 260px;
 }
 
 .buttons-list{
@@ -460,21 +460,21 @@ color: rgba(33, 33, 33, 1);
 }
 
 .gallery-list{
+   
+    margin-left: 215px;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 94px;
+    
 }
 
 .gallery-item{
-    flex-basis: calc(100%/3 - 30px);
+   
     padding-right: 30px;
     padding-bottom: 30px;
-    
+    flex-basis: calc(100%/3 - 3px);
     list-style-type: none;
     display: block;
-}
-
-.gallery-item.menu-item:nth-child(3){
-    padding-right: 0px;
 }
 
 
