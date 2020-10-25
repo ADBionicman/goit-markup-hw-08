@@ -146,16 +146,15 @@ img{
 
 .hero-content{
    
-     
+    display: inline-block; 
    
 }
 
 .herohead{
-  
-    border: 1px solid white;
+    margin-top: 200px;
+    
 
-
-    margin-left: 227px;
+    margin-left: 452px;
     
     width: 698px;
     height: 120px;
@@ -173,8 +172,8 @@ img{
 }
 
 .makeorder{
-
-    border: 1px solid white;
+    
+    
     text-decoration: none;
     text-align: center;
     color: var(--second-text-color);
@@ -206,7 +205,7 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
     align-items: center;   
-    background-color: #E5E5E5;
+    background-color: var(--second-text-color);
     margin: 0;
     padding: 0;
     
@@ -216,7 +215,7 @@ img{
 
     text-align: center;
     align-items: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -224,6 +223,7 @@ img{
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
+    color: var(--main-text-color);
 
     
 }
@@ -232,7 +232,7 @@ img{
     display: none;
 }
 .principles.list{
-    margin: auto;
+   
     width: 1200px;
 }
 
@@ -254,6 +254,11 @@ img{
     padding-right: 15px;
     align-items: center;
     justify-content: space-between;
+}
+
+.principles-item{
+    flex-basis: calc(100%/4);
+    padding-right: 30px;
 }
 
 .principles-h{
@@ -287,27 +292,25 @@ img{
 
 
 .whatwedo{
-    padding-left: 15px;
-    padding-right: 15px;
-
-    padding-top: 94px;
+    padding-left: 30px;
+    padding-right: 30px;
+      
     padding-bottom: 94px;
     justify-content: space-between; 
     display: flex;
-    align-items: center;
-    border: 1px solid wheat; 
-   
+    align-items: center;  
 
 }
 .whatwedo-item {
-    flex-basis: calc(100%/3);
-    
-    
+        flex-basis: calc(100%/3 - 30px);
+      
 }
 
-.whatwedo-item:nth-last-child(){
+.whatwedo:nth-last-child(3){
     padding-right: 0px;
+
 }
+
 
 
 .team{
@@ -324,18 +327,60 @@ img{
 }
 .team-item{
 
-    border: 1px solid black;
    
-    flex-basis: calc(100%/4 - 30px);
-    padding-right: 30px;
+    flex-basis: calc(100%/4);
+       
     
 }
 
-.team-item:nth-last-child(){
+.team-card{
+    
+    margin-right: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.team-card:nth-last-child(){
     padding-right: 0px;
 }
 
+.tm{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
+
+
+}
+
+.prof{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(117, 117, 117, 1);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+
+
+}
 .together{
     display: flex;  
    
