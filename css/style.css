@@ -347,7 +347,7 @@ img{
 
 .portfolio{
     width: 1600px;
-    height: 1380px;
+    height: 1542px;
     background-color: #FFFFFF;
 }
 
@@ -426,12 +426,18 @@ img{
 }
 
 .buttons-list{
+
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
 
 }
 
 .buttons-item{
+
+    
+
 
     color:rgba(33, 33, 33, 1);
     background-color: rgba(245, 244, 250, 1);
@@ -475,6 +481,39 @@ img{
     flex-basis: calc(100%/3 - 3px);
     list-style-type: none;
     display: block;
+}
+
+
+.gallery-item h1{
+    font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0.06em;
+text-align: left;
+margin-left: 24px;
+margin-top: 20px;
+margin-bottom: 4px;
+
+color: rgba(33, 33, 33, 1);
+
+}
+
+.gallery-item h2{
+    font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.03em;
+text-align: left;
+margin-left: 24px;
+margin-bottom: 20px;
+color: rgba(117, 117, 117, 1);
+
+
+
 }
 
 
