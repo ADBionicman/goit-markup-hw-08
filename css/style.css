@@ -122,6 +122,11 @@ img{
     margin-right: 331px;
 }
 
+.smartphone::before{
+    content: '';
+    background-image: url(../images/smartphone.svg);
+}
+
 
 .menu-link{
     font-family: Roboto;
@@ -147,6 +152,10 @@ img{
    
    height: 600px;
    background-color: rgba(47, 48, 58, 1);
+   background-image: url(../images/hero.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
    
 }
 
