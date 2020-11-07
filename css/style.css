@@ -169,12 +169,15 @@ img{
 
 .hero{
    display: block;
-   
    height: 600px;
    background-color: rgba(47, 48, 58, 1);
-   background-image: url(../images/hero.jpg);
+   background-image: linear-gradient(to left top, 
+    rgba(47, 48, 58, 0.2),
+     rgba(47, 48, 58, 0.8)
+   ), url(../images/hero.jpg) ;
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
 
    
 }
@@ -485,11 +488,15 @@ img{
 }
 
 .client-item{
-   
-    border: 1px solid rgba(175, 177, 184, 1);
+
+     
+    background-image: url(../images/svg/rectangle.svg); 
     margin-bottom: 94px;
     margin-right: 30px;
     align-items: center;
+    height: 90px;
+    
+
 }
 
 .client-item:last-child{
@@ -497,11 +504,17 @@ img{
 }
 
 .client-card{
+    background-image: url(../images/svg/rectangle.svg); 
     
+    background-image: fill rgba(175, 177, 184, 1);
     width: 170px;
     height: 90px;
     
         
+}
+
+.client-card:hover{
+    fill: var(--accent-cl);
 }
  
 
