@@ -21,8 +21,16 @@
                 <li class="menu-item"><a href="index.html" class="link menu-link">Студия</a></li>
                 <li class="menu-item"><a href="portfolio.html" class="link menu-link">Портфолио</a></li>
                 <li class="menu-item"><a href="#" class="link menu-link">Контакты</a></li>
-                <li class="menu-item"><a href="mailto:info@devstudio.com" class="link menu-link mailtel">info@devstudio.com</a></li>
-                <li class="menu-item"><a href="tel:+380991111111" class="link menu-link mailtel">+380961111111</a></li>
+                <li class="menu-item mail">
+                    <svg class="envelope">
+                        <use href="./images/svg/symbol.svg#icon-envelope"></use>
+                    </svg>
+                        <a href="mailto:info@devstudio.com" class="link menu-link mailtel">info@devstudio.com</a></li>
+                <li class="menu-item phone">
+                    <svg class="cell">
+                        <use href="./images/svg/symbol.svg#icon-cell"></use>
+                    </svg>
+                    <a href="tel:+380991111111" class="smartphone link menu-link mailtel">+380961111111</a></li>
             </ul>
             </nav>
             
@@ -53,7 +61,7 @@
             <ul class="gallery-list grid container ">
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic1.png" alt="pic1">
+                    <img src="./images/png/pic1.png" alt="pic1">
                         <figcaption><h2>Технокряк</h2>
                         <h3 class="variant">Веб-сайт</h3>
                         </figcaption>
@@ -61,7 +69,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic2.png"  alt="pic2">
+                    <img src="./images/png/pic2.png"  alt="pic2">
                     <figcaption><h2>Постер New Orlean vs Golden Star</h2>
                         <h3 class="variant">Дизайн</h3>
                         </figcaption>
@@ -69,14 +77,14 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic3.png"  alt="pic3">
+                    <img src="./images/png/pic3.png"  alt="pic3">
                     <figcaption><h2>Ресторан Seafood</h2>
                         <h3 class="variant">Приложение</h3>
                         </figcaption>
                     </figure>
                 </li>
                 <li class="gallery-item">
-                    <figure class="figure"><img src="./images/pic4.png"  alt="pic4">
+                    <figure class="figure"><img src="./images/png/pic4.png"  alt="pic4">
                         <figcaption><h2>Проект Prime</h2>
                             <h3 class="variant">Веб-сайт</h3>
                             </figcaption>
@@ -84,7 +92,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic5.png"  alt="pic5">
+                    <img src="./images/png/pic5.png"  alt="pic5">
                     <figcaption><h2>Проект Boxes</h2>
                         <h3 class="variant">Приложение</h3>
                         </figcaption>
@@ -92,7 +100,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                        <img src="./images/pic6.png"  alt="pic6">
+                        <img src="./images/png/pic6.png"  alt="pic6">
                         <figcaption><h2>Технокряк</h2>
                             <h3 class="variant">Веб-сайт</h3>
                             </figcaption>
@@ -100,7 +108,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                        <img src="./images/pic7.png"  alt="pic7">
+                        <img src="./images/png/pic7.png"  alt="pic7">
                         <figcaption>
                             <h2>Издание Limited Edition</h2>
                             <h3 class="variant">Дизайн</h3>
@@ -109,7 +117,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic8.png"  alt="pic8">
+                    <img src="./images/png/pic8.png"  alt="pic8">
                     <figcaption>
                         <h2>Проект LAB</h2>
                         <h3 class="variant">Маркетинг</h3>
@@ -118,7 +126,7 @@
                 </li>
                 <li class="gallery-item">
                     <figure class="figure">
-                    <img src="./images/pic9.png"  alt="pic9">
+                    <img src="./images/png/pic9.png"  alt="pic9">
                     <figcaption>
                         <h2>Growing Business</h2>
                         <h3 class="variant">Приложение</h3>
@@ -132,12 +140,49 @@
     </main>
      
     <footer class="footer">
-        <div class = "container footer-container">   
+           
+        <div class = "container ">   
+            <div class="footer-container">
         <a href="index.html" class="footer-link"><span class="address web">Web</span><span class="studiof">Studio</span></a>
         <address class="way">г. Киев, пр-т Леси Украинки, 26</address>
         <a href="mailto:info@example.com" class="footer-link">info@example.com</a> <br/>
         <a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
-        </div>    
+            </div>
+
+        <div class="socials">
+            <h1 class="join">Присоединяйтесь</h1>
+            <ul class="social-links">
+                <li class="social-item">
+                    <a href="https://instagram.com" target="_blank" id="instagram" rel="noopener noreferer">
+                        <svg class="ikon">
+                            <use  href="./images/icons/sprite.svg#instagram"></use>
+
+                        </svg>
+                    </a>
+                </li>
+                <li class="ikon"><a href="https://twitter.com" target="_blank" id="twitter" rel="noopener noreferer">
+                    <svg class="ikon">
+                        <use href="./images/icons/sprite.svg#twitter"></use>
+
+                    </svg></a></li>
+                <li class="ikon"><a href="https://facebook.com" target="_blank" id="facebook" rel="noopener noreferer">
+                    <svg class="ikon">
+                        <use href="./images/icons/sprite.svg#facebook"></use>
+
+                    </svg></a></li>
+                <li class="ikon">
+                    <a href="https://linkedin.com" target="_blank" id="linkedin" rel="noopener noreferer">
+                        <svg class="ikon">
+                            <use href="./images/icons/sprite.svg#linkedin"></use>    
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>   
+        
+       
+    
     </footer>
     
 </body>

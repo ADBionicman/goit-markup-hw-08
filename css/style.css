@@ -108,9 +108,12 @@ img{
 }
 
 .navi,
-.menu{
+.menu,
+.mail,
+.phone{
 
     display: inline-flex; 
+    align-items: center;
     
    
 }
@@ -122,11 +125,19 @@ img{
     margin-right: 331px;
 }
 
-.smartphone::before{
-    content: '';
-    background-image: url(../images/smartphone.svg);
+.envelope{
+    
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
+.cell{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    
 
+}
 
 .menu-link{
     font-family: Roboto;
@@ -143,7 +154,11 @@ img{
 }
 
 .menu-link:hover,
-.menu-link:focus{
+.menu-link:focus,
+.cell:focus,
+.cell:hover,
+.envelope:hover,
+.envelopefocus{
     color: var(--accent-cl);
 }
 
@@ -224,6 +239,15 @@ img{
     padding: 0;
     
 }
+
+
+.image-icon{
+    max-width: 270px;
+    max-height: 120px;
+   
+}
+
+
 
 .h2-head{
 
@@ -410,8 +434,6 @@ img{
 }
 
 .portfolio{
-   
-   
     height: 1542px;
     background-color: #FFFFFF;
 }
@@ -426,6 +448,36 @@ img{
     border: #EEEEEE solid 1px;   
 }
 
+.client{
+
+    background-color: var(--second-text-color);
+  }
+.clients-h{
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+}
+
+.clients-list{
+    display: inline-flex;
+    list-style: none;  
+    
+}
+
+.client-card{
+    width: 170px;
+    height: 90px;
+    
+
+    
+}
  
 
 
@@ -434,6 +486,10 @@ img{
     height: 252px;
     background-color: rgba(47, 48, 58, 1);
 
+}
+
+.nfooter{
+    display: flex;
 }
 
 .footer-link{
@@ -470,12 +526,66 @@ img{
     letter-spacing: 0.03em;
 }
 
+.footer .container{
+    display: flex;
+    align-items: top;
+}
 .footer-container{
     
    
     padding-top: 60px;
     margin-bottom: 8px;
 }
+
+.socials{
+    
+    text-align: left;
+    
+    padding-top: 50px;
+    margin-left: 72px;
+    padding-bottom: 20px;
+}
+.social-links{
+    display: flex;
+    list-style: none;
+}
+
+.sl-team{
+    margin-left: 32px;
+
+    
+}
+
+.social-item{
+   
+    margin-right: 20px;
+}
+.client-list{
+    display: flex;
+}
+.join {
+    font-family: Roboto;
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 700;
+    
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1)
+}
+.ikon{
+    
+    width: 44px;
+    height: 44px;
+    background-color:   rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+   
+}
+
+.ikon.svg{
+    max-width: 20px;
+    max-height: 20px;
+}
+
 
 .way{
     color: var(--second-text-color);
