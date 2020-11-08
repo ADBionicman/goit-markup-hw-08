@@ -661,6 +661,8 @@ img{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    padding-left: 32px;
+    padding-right: 32px;
   
 
 }
@@ -681,34 +683,30 @@ img{
     height: 44px;
     align-items: center;
     margin-bottom: 30px;
+    border-radius: 50%;
   
-    background-image: url(../images/svg/ellipse.svg);
+    background-color: inherit ;
    
     border-radius: 50px;
    
 }
 
+
+
+
 .icon-container-tc:hover,
 .icon-container-tc:focus{
     background-color: var(--accent-cl);
+    fill: var(--second-text-color);
    
 }
-    
-
-
-
-
-
+   
 .icon-tc:hover,
 .icon-tc:focus{
     background-color: var(--accent-cl);
-    fill: var(--second-text-color);
+     fill: var(--second-text-color);
+   
 }
-
-
-
-
-
 
 .way{
     color: var(--second-text-color);
@@ -741,8 +739,6 @@ img{
 
 }
 
-
-
 .buttons-item{
     color:rgba(33, 33, 33, 1);
     background-color: rgba(245, 244, 250, 1);
@@ -756,7 +752,6 @@ img{
     list-style: none;
    
 }
-
 .buttons-item:nth-child(1){
     margin-left: 280px;
 }
