@@ -125,6 +125,14 @@ img{
     margin-right: 279px;
 }
 
+.menu-item:hover .envelope,
+.menu-item:hover .cell,
+.menu-item:focus .envelope,
+.menu-item:focus .cell
+{
+    color: var(--accent-cl);
+    fill: var(--accent-cl);
+}
 
 .menu-link{
     font-family: Roboto;
@@ -139,7 +147,11 @@ img{
 .mailtel{
     color: rgba(117, 117, 117, 1);
 }
+
+
+
 .envelope{
+    
     width: 16px;
     height: 16px;
     margin-right: 10px;
@@ -152,25 +164,13 @@ img{
     fill: rgba(117, 117, 117, 1);
 }
 
-.cell:hover,
-.cell:focus,
-.envelope:hover,
-.envelope:focus{
-    fill: var(--accent-cl);
-}
-
 
 
 .menu-link:hover,
 .menu-link:focus{
     color: var(--accent-cl);
 }
-.mail:focus,
-.mail:hover,
-.phone:hover,
-.phone:focus{
-    fill: var(--accent-cl);
-}
+
 
 .hero{
    display: block;
@@ -364,7 +364,7 @@ img{
 
 .team{
 
-   
+
     height: 648px;
     
     background-color: #F5F4FA;   
@@ -377,11 +377,9 @@ img{
 .team-item{
 
     width: 270px;
-
    
     flex-basis: calc(100%/4);
-    
-       
+  
     
 }
 
@@ -389,7 +387,7 @@ img{
     background: rgba(255, 255, 255, 1);
 
     
-    margin-right: 30px;
+    
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -429,7 +427,7 @@ img{
     color: rgba(117, 117, 117, 1);
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 17px;
 
 
 }
@@ -508,9 +506,11 @@ img{
 }
 
 .client-card{
-    background-image: url(../images/svg/rectangle.svg); 
-    
-    background-image: fill rgba(175, 177, 184, 1);
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+    border-color: rgba(175, 177, 184, 1);
     width: 170px;
     height: 90px;
     
@@ -520,7 +520,7 @@ img{
 .client-item:hover,
 .client-card:hover{
     fill: var(--accent-cl);
-    b
+    border-color: var(--accent-cl);
 }
  
 
@@ -582,14 +582,16 @@ img{
 }
 
 .socials{
-    
     text-align: left;
     
-    padding-top: 50px;
-    margin-left: 72px;
+    padding-top: 60px;
+    margin-left: 70px;
     padding-bottom: 20px;
+    
+   
 }
 .social-links{
+    margin-top: 20px;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -612,13 +614,16 @@ img{
 
 
 .join {
+    text-transform: uppercase;
     font-family: Roboto;
-    font-size: 14px;    
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    
+    line-height: 16px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 1)
+    text-align: left;
+    
+      color: rgba(255, 255, 255, 1)
 }
 
 .icon-container{
@@ -731,6 +736,9 @@ img{
     background-color: FFFFFF;
     padding-top: 94px;  
     margin-bottom: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Roboto;
    
    
 }
