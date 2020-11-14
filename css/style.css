@@ -103,6 +103,11 @@ img {
   align-items: center;
 }
 
+.menu-item {
+  position: relative;
+  content: "";
+}
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -150,6 +155,17 @@ img {
   color: var(--accent-cl);
 }
 
+.current:hover::after {
+  position: absolute;
+  bottom: -26px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
 .hero {
   display: block;
   height: 600px;
@@ -186,6 +202,8 @@ img {
 }
 
 .makeorder {
+  position: relative;
+  content: "";
   display: flex;
   margin-left: 500px;
 
@@ -200,6 +218,57 @@ img {
   border-radius: nullpx;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 581px;
+  width: 528px;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: var(--second-text-color);
+  box-shadow: 0px 2px 1px 0px #000000 20 %;
+
+  box-shadow: 0px 1px 1px 0px #000000 14 %;
+
+  box-shadow: 0px 1px 3px 0px #000000 12 %;
+}
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  background-color: var(--second-text-color);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  left: 100%;
+  background-repeat: no-repeat;
+  background-color: none;
+
+  width: 11px;
+  height: 11px;
+
+  fill: #000000;
 }
 
 .makeorder:hover,
@@ -329,7 +398,8 @@ img {
   text-transform: uppercase;
   width: 370px;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background: rgb(47, 48, 58, 0.8);
+  background-clip: padding-box;
 }
 
 .team {
@@ -731,4 +801,28 @@ img {
   margin-left: 24px;
   margin-bottom: 20px;
   color: rgba(117, 117, 117, 1);
+}
+
+.project-description {
+  width: auto;
+  height: 270px;
+  background-color: var(--accent-cl);
+  color: var(--second-text-color);
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: left;
+}
+.project-card {
+  overflow: hidden;
+}
+.project-thumb::before .project-description {
+  transform: translateY(-100%);
+
+  transition: transform 250ms;
+}
+
+.project-card:hover .project-thumb::before,
+.poject-card:focus .project-thumb::before {
+  transform: translateY(0);
 }
