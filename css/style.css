@@ -269,7 +269,7 @@ img {
   display: block;
   position: relative;
 }
-.modal h3 {
+.modal .h3 {
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -767,6 +767,7 @@ img {
   padding-left: 16px;
   border-radius: 4px;
   margin-right: 12px;
+  margin-top: 25px;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -774,7 +775,7 @@ img {
   line-height: 20px;
   letter-spacing: 0.03em;
   text-align: left;
-  border: 1px solid 255, 255, 255, 0, 3;
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 .jsend {
   display: flex;
@@ -783,6 +784,7 @@ img {
   margin-left: 29px;
 }
 .footer-spam-btn {
+  margin-top: 25px;
   color: var(--second-text-color);
   width: 200px;
   height: 50px;
@@ -827,6 +829,7 @@ img {
   width: 44px;
   height: 44px;
   align-items: center;
+  margin-top: 20px;
 
   background-image: url(../images/svg/ellipse.svg);
   margin-right: 10px;
