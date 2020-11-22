@@ -54,13 +54,52 @@
 
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                       
+
+                            <div>
                             <button data-modal-close class="close-btn">
                             <svg class="close"  >
                                     <use href="./images/svg/symbol.svg#icon-close"></use>
                             </svg>
                        
                            </button>
+                           <h2 class="modal-head">Оставьте свои данные, мы вам перезвоним</h2>
+                        </div>
+                        <div class="data"> 
+                        <div>
+                           <h3> имя</h3>
+                           
+                           <input type="text" class="modal-input modal-name" name="name"> 
+                        </div>
+                            
+                        <div>
+                        <h3>телефон</h3>
+                       
+                            <input type="tel" class="modal-input modal-tel" name="tel">
+                        </div>
+                        <div>
+                        <h3>почта</h3>
+                      
+                        <input type="email" class="modal-input modal-mail" name="email">
+                        </div>
+
+                        <div>
+                            <h3>Комментарий</h3>
+                            <textarea class="modal-input modal-comment" name="comment" id="" cols="30" rows="5" placeholder="Введите текст"></textarea>
+                        </div>
+                        </div>
+
+                        <div class="terms">
+                            <label class="checkbox">
+
+                            <input type="checkbox" class="quadro">
+                          
+                            <span class="terms-comment">Соглашаюсь с рассылкой и принимаю <a class="license" href="">Условия договора</a></span>
+                            </label>
+                        </div>
+                        <div class="data-btn">
+                        <button type="submit" class="data-send-btn">Отправить</button>
+                        </div>
+
                      </div>
                     </div>
                 
@@ -439,7 +478,21 @@
                     </li>
                 </ul>
             </div>
-            </div>   
+            <div class="socials">
+            
+                <h1 class="join jsend">подпишитесь на рассылку</h1>
+                <div class="jsend">
+                    <div class="send-btn"></div>
+                    <input class="footer-spam" type="email" name="footer-spam" placeholder="E-mail" />
+            
+                    <button type="submit" class="footer-spam-btn" name="footer-spam-btn">Подписаться
+                        <svg class="plane">
+                            <use href="./images/svg/symbol.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+           
             
            
         

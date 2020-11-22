@@ -209,7 +209,7 @@ img {
 .makeorder {
   border: none;
   position: relative;
-  content: "";
+
   display: flex;
   margin-left: 500px;
 
@@ -235,8 +235,6 @@ img {
 .modal {
   position: absolute;
 
-  display: flex;
-
   margin-left: auto;
   margin-right: auto;
   height: 581px;
@@ -254,6 +252,110 @@ img {
   box-shadow: 0px 1px 3px 0px #000000 12%;
   content: "";
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-head {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 40px;
+}
+.data {
+  display: block;
+  position: relative;
+}
+.modal h3 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  margin-top: 10px;
+  margin-left: 41px;
+  padding-bottom: 4px;
+}
+.modal-input {
+  position: relative;
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 5px 5px 5px 40px;
+  height: 40px;
+  width: 448px;
+  margin-left: 41px;
+  border: 1px solid #212121 20%;
+  border-radius: 4px;
+}
+.modal-name {
+  background: url(../images/svg/person.svg) no-repeat center left;
+}
+
+.modal-tel {
+  background: url(../images/svg/tube.svg) no-repeat center left;
+}
+.modal-mail {
+  background: url(../images/svg/envelope2.svg) no-repeat center left;
+}
+.modal-comment {
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-cl);
+}
+
+.quadro {
+  background-image: url(../images/svg/quadro.svg) no-repeat center left;
+  padding-left: 30px;
+  cursor: pointer;
+  margin-left: 52px;
+  width: 16px;
+  height: 15px;
+}
+.quadro:checked {
+  background-color: var(--accent-cl);
+}
+.terms-comment {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.data-btn {
+  margin-top: 30px;
+  margin-left: 165px;
+}
+
+.data-send-btn {
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--accent-cl);
+  color: var(--second-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .backdrop {
@@ -563,6 +665,7 @@ img {
 
 .client-item:hover,
 .client-card:hover {
+  cursor: pointer;
   fill: var(--accent-cl);
   border-color: var(--accent-cl);
 }
@@ -628,6 +731,7 @@ img {
   list-style: none;
   justify-content: space-evenly;
 }
+
 .client-list {
   display: flex;
 }
@@ -654,6 +758,68 @@ img {
   text-align: left;
 
   color: rgba(255, 255, 255, 1);
+}
+
+.footer-spam {
+  width: 352px;
+  height: 50px;
+  background-color: transparent;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  border: 1px solid 255, 255, 255, 0, 3;
+}
+.jsend {
+  display: flex;
+}
+.send-btn {
+  display: inline;
+}
+.footer-spam-btn {
+  color: var(--second-text-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--accent-cl);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  align-items: center;
+
+  border: none;
+  box-shadow: 0px 4px 4px 0px 0, 0, 0, 0, 15;
+
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-spam-btn:hover,
+.footer-spam-btn:focus,
+.footer-spam-btn:hover .plane,
+.footer-spam-btn:focus .plane {
+  color: var(--accent-cl);
+  background-color: var(--second-text-color);
+  fill: var(--accent-cl);
+}
+
+.plane {
+  display: inline;
+
+  fill: var(--second-text-color);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .icon-container {
