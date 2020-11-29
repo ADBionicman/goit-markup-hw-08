@@ -265,10 +265,7 @@ img {
 
   margin-top: 40px;
 }
-.data {
-  display: block;
-  position: relative;
-}
+
 .modal .h3 {
   font-family: Roboto;
   font-size: 12px;
@@ -295,22 +292,18 @@ img {
   border: 1px solid #212121 20%;
   border-radius: 4px;
 }
-.modal-name {
-  background: url(../images/svg/person.svg) no-repeat center left;
-}
 
-.modal-tel {
-  background: url(../images/svg/tube.svg) no-repeat center left;
-}
-.modal-mail {
-  background: url(../images/svg/envelope2.svg) no-repeat center left;
-}
 .modal-comment {
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
 }
 
+.modal-input:hover + .form-svg,
+.modal-input:focus + .form-svg {
+  border-color: var(--accent-cl);
+  fill: var(--accent-cl);
+}
 .modal-input:hover,
 .modal-input:focus {
   border-color: var(--accent-cl);
