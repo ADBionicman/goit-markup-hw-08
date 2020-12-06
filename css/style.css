@@ -300,37 +300,28 @@ img {
   padding-left: 16px;
   padding-top: 12px;
 }
-.modal-in,
-.modal-in-2,
-.modal-in-3  {
-  position: relative;
-}
+
 .modal-icon {
+  position: absolute;
+  display: inline-block;
   width: 15px;
   height: 15px;
-  position: absolute;
-  left: 10%;
-  top: 18%;
-}
-.modal-icon-2 {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 10%;
-  top: 18%;
-}
-.modal-icon-3 {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 10%;
-  top: 18%;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15 px;
 }
 
 .form-svg {
-  width: 15px;
-  height: 15px;
+  position: relative;
 }
+.form-svg-icon {
+  max-width: 15px;
+  max-height: 15px;
+  position: absolute;
+  top: 5%;
+  left: -432px;
+}
+
 .modal-input:hover + .form-svg,
 .modal-input:focus + .form-svg {
   border-color: var(--accent-cl);
@@ -340,26 +331,16 @@ img {
 .modal-input:focus {
   border-color: var(--accent-cl);
 }
+.check__box {
+  -webkit-appearance: none;
+  position: absolute;
+}
 
-.quadro {
-  background-image: url(../images/svg/quadro.svg) no-repeat center left;
-  padding-left: 30px;
-  cursor: pointer;
-  margin-left: 52px;
+.check__input {
   width: 16px;
   height: 15px;
-}
-.quadro:checked {
-  background-color: var(--accent-cl);
-}
-.terms-comment {
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
+  background-image: url(../images/svg/check.svg);
+  background-repeat: no-repeat;
 }
 
 .data-btn {

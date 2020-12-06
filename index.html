@@ -64,33 +64,55 @@
                            </button>
                            <h2 class="modal-head">Оставьте свои данные, мы вам перезвоним</h2>
                         </div>
-                        <div class="data"> 
-                           
+                        <form class="form">
+                        <div class="form-field"> 
                            <label for="person" class="h3"> Имя</label>
-                           
-                           
-                           <input type="text" id="person" name ="person" class="modal-input modal-in" name="name"> 
-                            <svg class="modal-icon">
-                                <use href="./images/svg/symbol.svg#icon-person"></use>
-                            </svg>
+                                                  
+                           <input 
+                           type="text" 
+                           class="modal-input"
+                           name="name"
+                           id="person"
+                           placeholder=" " > 
+                            <span class="form-svg">
+                                <svg class="form-svg-icon">
+                                    <use href="./images/svg/symbol.svg#icon-person"></use>
+                                </svg>
+                               
+                            </span>
                             
                         <div>
                         <label for="tel" class="h3"> Teлефон</label>
                         
                        
-                            <input id="tel" name ="tel" type="tel" class="modal-input modal-in-2" name="tel">
-                            <svg class="modal-icon-2">
-                                <use href="./images/svg/symbol.svg#icon-tube"></use>
-                            </svg>
+                            <input 
+                            type="tel" 
+                            class="modal-input" 
+                            name="tel" 
+                            id="tel" 
+                            placeholder=" ">
+                                <span class="form-svg">
+                                    <svg class="form-svg-icon">
+                                        <use href="./images/svg/symbol.svg#icon-tube"></use>
+                                    </svg>
+                                
+                                </span>
                         </div>
+                        
                         <div>
                         <label for="email" class="h3"> Почта</label>
                             
-                        
-                        <input id="email" name="email" type="email" class="modal-input modal-in-3" name="email">
-                            <svg class="modal-icon-3">
+                            <input type="email" 
+                            class="modal-input" 
+                            name="mail" 
+                            id="mail" 
+                            placeholder=" ">
+                        <span class="form-svg">
+                            <svg class="form-svg-icon">
                                 <use href="./images/svg/symbol.svg#icon-envelope2"></use>
                             </svg>
+                        
+                        </span>
                     </div>
 
                         <div>
@@ -99,19 +121,18 @@
                         </div>
                         </div>
 
-                        <div class="terms">
-                            <label class="checkbox">
-
-                            <input type="checkbox" name="checkbox" class="quadro">
-                          
-                            <span class="terms-comment">Соглашаюсь с рассылкой и принимаю <a class="license" href="">Условия договора</a></span>
-                            </label>
-                        </div>
+                        <label class="check">
+                            <input class="check__box" type="checkbox"> 
+                            <span class="check__input"></span>
+                            Условия
+                        </label>
                         <div class="data-btn">
                         <button type="submit" class="data-send-btn">Отправить</button>
                         </div>
+                       
 
                      </div>
+                    </form>
                     </div>
                 
                 </div>
