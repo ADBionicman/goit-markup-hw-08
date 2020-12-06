@@ -67,35 +67,31 @@
                         <div class="data"> 
                            
                            <label for="person" class="h3"> Имя</label>
-                            <div class="pers-ic">
-                           <svg class="form-svg">
-                               <use width="12"  href="./images/svg/symbol.svg#icon-perso"></use>
-                           </svg>
-                            </div>
                            
-                           <input type="text" id="person" class="modal-input modal-name" name="name"> 
-                        
+                           
+                           <input type="text" id="person" name ="person" class="modal-input modal-in" name="name"> 
+                            <svg class="modal-icon">
+                                <use href="./images/svg/symbol.svg#icon-person"></use>
+                            </svg>
                             
                         <div>
                         <label for="tel" class="h3"> Teлефон</label>
-                        <div class="pers-ic">
-                            <svg class="form-svg">
-                                <use width="12" href="./images/svg/symbol.svg#icon-tub"></use>
-                            </svg>
-                        </div>
+                        
                        
-                            <input id="tel" type="tel" class="modal-input modal-tel" name="tel">
+                            <input id="tel" name ="tel" type="tel" class="modal-input modal-in-2" name="tel">
+                            <svg class="modal-icon-2">
+                                <use href="./images/svg/symbol.svg#icon-tube"></use>
+                            </svg>
                         </div>
                         <div>
                         <label for="email" class="h3"> Почта</label>
                             
-                        <div class="pers-ic">
-                            <svg class="form-svg">
-                                <use width="12" href="./images/svg/symbol.svg#icon-envelope"></use>
+                        
+                        <input id="email" name="email" type="email" class="modal-input modal-in-3" name="email">
+                            <svg class="modal-icon-3">
+                                <use href="./images/svg/symbol.svg#icon-envelope2"></use>
                             </svg>
-                        </div>
-                        <input id="email" type="email" class="modal-input modal-mail" name="email">
-                        </div>
+                    </div>
 
                         <div>
                             <label for="comm" class="h3"> Комментарий</label>
@@ -106,7 +102,7 @@
                         <div class="terms">
                             <label class="checkbox">
 
-                            <input type="checkbox" class="quadro">
+                            <input type="checkbox" name="checkbox" class="quadro">
                           
                             <span class="terms-comment">Соглашаюсь с рассылкой и принимаю <a class="license" href="">Условия договора</a></span>
                             </label>

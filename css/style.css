@@ -207,13 +207,15 @@ img {
 }
 
 .makeorder {
+  cursor: pointer;
   border: none;
   position: relative;
 
-  display: flex;
+  display: inline-block;
   margin-left: 500px;
 
   align-items: center;
+  text-align: center;
 
   text-decoration: none;
 
@@ -298,7 +300,37 @@ img {
   padding-left: 16px;
   padding-top: 12px;
 }
+.modal-in,
+.modal-in-2,
+.modal-in-3  {
+  position: relative;
+}
+.modal-icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10%;
+  top: 18%;
+}
+.modal-icon-2 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10%;
+  top: 18%;
+}
+.modal-icon-3 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10%;
+  top: 18%;
+}
 
+.form-svg {
+  width: 15px;
+  height: 15px;
+}
 .modal-input:hover + .form-svg,
 .modal-input:focus + .form-svg {
   border-color: var(--accent-cl);
@@ -364,6 +396,7 @@ img {
 
 .close-btn {
   position: absolute;
+  cursor: pointer;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -376,6 +409,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   content: "";
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn .close:hover,
+.close-btn .close:focus {
+  fill: var(--accent-cl);
 }
 
 .close {
@@ -754,7 +792,7 @@ img {
 }
 
 .footer-spam {
-  width: 352px;
+  width: 358px;
   height: 50px;
   background-color: transparent;
   padding-left: 16px;
@@ -777,6 +815,7 @@ img {
   margin-left: 29px;
 }
 .footer-spam-btn {
+  cursor: pointer;
   margin-top: 25px;
   color: var(--second-text-color);
   width: 200px;
