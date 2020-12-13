@@ -331,6 +331,8 @@ img {
 .modal-input:hover,
 .modal-input:focus {
   border-color: var(--accent-cl);
+  outline: none;
+  box-shadow: none;
 }
 .checkbox {
   -webkit-appearance: none;
@@ -783,7 +785,6 @@ img {
 
 .socials {
   text-align: left;
-
   padding-top: 60px;
   margin-left: 70px;
   padding-bottom: 20px;
@@ -800,10 +801,8 @@ img {
 
   padding-top: 60px;
   margin-left: 93px;
-  padding-bottom: 20px;
 }
 .social-links {
-  margin-top: 20px;
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -833,6 +832,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+  padding-bottom: 20px;
 
   color: rgba(255, 255, 255, 1);
 }
@@ -844,7 +844,6 @@ img {
   padding-left: 16px;
   border-radius: 4px;
 
-  margin-top: 25px;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -862,7 +861,7 @@ img {
 }
 .footer-spam-btn {
   cursor: pointer;
-  margin-top: 25px;
+
   margin-left: 12px;
   color: var(--second-text-color);
   width: 200px;
@@ -909,7 +908,6 @@ img {
   width: 44px;
   height: 44px;
   align-items: center;
-  margin-top: 20px;
 
   background-image: url(../images/svg/ellipse.svg);
 
