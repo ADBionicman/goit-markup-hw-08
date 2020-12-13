@@ -1,0 +1,18 @@
+.client-item {
+  margin-bottom: 94px;
+  margin-right: 30px;
+  align-items: center;
+  height: 90px;
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: rgba(175, 177, 184, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-cl;
+  }
+}

@@ -1,0 +1,18 @@
+.client-card {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+
+  border-radius: 4px;
+  border-color: rgba(175, 177, 184, 1);
+  width: 170px;
+  height: 90px;
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:hover {
+    cursor: pointer;
+    fill: $accent-cl;
+    border-color: $accent-cl;
+  }
+}

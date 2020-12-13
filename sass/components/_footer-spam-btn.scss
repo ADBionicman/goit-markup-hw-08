@@ -1,0 +1,33 @@
+.footer-spam-btn {
+  cursor: pointer;
+
+  margin-left: 12px;
+  color: $second-text-color;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: $accent-cl;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+
+  display: inline-flex;
+  border: none;
+  box-shadow: 0px 4px 4px 0px 0, 0, 0, 0, 15;
+
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:hover .plane,
+  &:focus .plane {
+    color: $accent-cl;
+    background-color: $second-text-color;
+    fill: $accent-cl;
+  }
+}

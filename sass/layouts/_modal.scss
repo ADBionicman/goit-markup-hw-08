@@ -1,0 +1,225 @@
+.modal {
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 581px;
+  width: 528px;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: $second-text-color;
+  box-shadow: 0px 2px 1px 0px #000000 20%;
+
+  box-shadow: 0px 1px 1px 0px #000000 14%;
+
+  box-shadow: 0px 1px 3px 0px #000000 12%;
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-head {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.modal .h3 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  margin-top: 10px;
+  margin-left: 41px;
+  padding-bottom: 4px;
+}
+.modal-input {
+  position: relative;
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 5px 5px 5px 40px;
+  height: 40px;
+  width: 448px;
+  margin-left: 41px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-comment {
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
+  resize: none;
+}
+
+.modal-icon {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15 px;
+}
+
+.form-svg {
+  position: relative;
+}
+.form-svg-icon {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 15%;
+  left: -432px;
+}
+
+.modal-input:hover + .form-svg,
+.modal-input:focus + .form-svg {
+  border-color: $accent-cl;
+  fill: $accent-cl;
+}
+.modal-input:hover,
+.modal-input:focus {
+  border-color: $accent-cl;
+  outline: none;
+  box-shadow: none;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.agriement__icon {
+  margin-right: 9px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agriement__text {
+  display: inline-block;
+}
+
+.agriement {
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 428px;
+  height: 20px;
+  position: absolute;
+  margin-left: 52px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575, 100%;
+}
+
+.agriement__terms {
+  color: $accent-cl;
+}
+
+.agriement__icon {
+  margin-right: 9px;
+  border: none;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/svg/icon_noncheck.svg);
+  background-size: contain;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agriement__checkbox:checked + .agriement__icon {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/svg/icon_check.svg);
+  border: none;
+  background-size: contain;
+}
+
+.agriement__btn {
+  margin-top: 60px;
+  margin-left: 164px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: $accent-cl;
+  color: $second-text-color;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.backdrop {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 132%;
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  background-color: $second-text-color;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  content: "";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn .close:hover,
+.close-btn .close:focus {
+  fill: $accent-cl;
+}
+
+.close {
+  left: 100%;
+  background-repeat: no-repeat;
+  background-color: none;
+
+  width: 11px;
+  height: 11px;
+
+  fill: #000000;
+}
