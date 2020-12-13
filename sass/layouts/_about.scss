@@ -17,11 +17,9 @@
   align-items: center;
   padding-bottom: 50px;
   font-family: Roboto;
-  font-size: 36px;
+  @include fonts(36px, 700, 42px, 0.03em);
   font-style: normal;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.03em;
+
   text-align: center;
   color: $main-text-color;
   margin-left: auto;

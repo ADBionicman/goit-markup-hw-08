@@ -30,11 +30,8 @@
 .studiof {
   color: $second-text-color;
   font-family: Raleway;
-  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  @include fonts(26px, 700, 31px, 0.03em);
 }
 
 .footer .container {
